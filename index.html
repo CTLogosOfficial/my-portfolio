@@ -1,402 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Creativity That Talks | Logo Design Studio</title>
+<title>CT Logos | Professional Logo Designer for Small Businesses</title>
 
-<style>
+<meta name="description" content="CT Logos creates affordable professional logo designs, branding and visual identities for startups, small businesses and creators.">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#0d1117;
-color:white;
-overflow-x:hidden;
-}
-
-/* Navigation */
-
-nav{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-background:rgba(0,0,0,.55);
-backdrop-filter:blur(10px);
-z-index:1000;
-}
-
-.logo{
-font-size:32px;
-font-weight:bold;
-letter-spacing:2px;
-color:#42d4ff;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-}
-
-nav ul li{
-margin-left:35px;
-}
-
-nav ul li a{
-text-decoration:none;
-color:white;
-transition:.3s;
-font-weight:bold;
-}
-
-nav ul li a:hover{
-color:#42d4ff;
-}
-
-/* Hero */
-
-.hero{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:40px;
-background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),
-linear-gradient(135deg,#0d1117,#121b2b,#00324d);
-}
-
-.hero h1{
-font-size:80px;
-margin-bottom:20px;
-animation:fade 1.5s ease;
-}
-
-.hero h2{
-font-size:30px;
-font-weight:300;
-color:#42d4ff;
-margin-bottom:25px;
-}
-
-.hero p{
-max-width:750px;
-margin:auto;
-font-size:20px;
-line-height:1.8;
-color:#cccccc;
-}
-
-.buttons{
-margin-top:45px;
-}
-
-.btn{
-display:inline-block;
-padding:16px 40px;
-margin:10px;
-background:#42d4ff;
-border-radius:40px;
-color:#111;
-text-decoration:none;
-font-weight:bold;
-transition:.4s;
-}
-
-.btn:hover{
-transform:translateY(-5px);
-box-shadow:0 0 20px #42d4ff;
-}
-
-.btn2{
-display:inline-block;
-padding:16px 40px;
-margin:10px;
-border:2px solid #42d4ff;
-border-radius:40px;
-color:white;
-text-decoration:none;
-transition:.4s;
-}
-
-.btn2:hover{
-background:#42d4ff;
-color:black;
-}
-
-/* Sections */
-
-section{
-padding:110px 8%;
-}
-
-.title{
-text-align:center;
-font-size:45px;
-margin-bottom:50px;
-color:#42d4ff;
-}
-
-/* About */
-
-.about{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:40px;
-align-items:center;
-}
-
-.about-card{
-background:#161b22;
-padding:40px;
-border-radius:20px;
-transition:.4s;
-}
-
-.about-card:hover{
-transform:translateY(-10px);
-}
-
-.about-card h3{
-margin-bottom:20px;
-font-size:30px;
-color:#42d4ff;
-}
-
-.about-card p{
-color:#c9d1d9;
-line-height:1.8;
-}
-
-/* Services */
-
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-}
-
-.service{
-background:#161b22;
-padding:35px;
-border-radius:20px;
-transition:.4s;
-border:1px solid transparent;
-}
-
-.service:hover{
-border-color:#42d4ff;
-transform:translateY(-8px);
-}
-
-.service h3{
-margin-bottom:15px;
-font-size:26px;
-color:#42d4ff;
-}
-
-.service p{
-color:#bbbbbb;
-}
-
-/* Stats */
-
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:30px;
-margin-top:70px;
-}
-
-.stat{
-background:#161b22;
-padding:40px;
-border-radius:20px;
-text-align:center;
-}
-
-.stat h1{
-font-size:55px;
-color:#42d4ff;
-margin-bottom:10px;
-}
-
-.stat p{
-color:#bbbbbb;
-}
-
-/* Portfolio */
-
-.portfolio{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
-
-.work{
-background:#161b22;
-padding:40px;
-border-radius:20px;
-transition:.4s;
-cursor:pointer;
-}
-
-.work:hover{
-transform:scale(1.03);
-background:#1f2732;
-}
-
-.work h3{
-margin-bottom:20px;
-color:#42d4ff;
-font-size:28px;
-}
-
-.work p{
-color:#bfbfbf;
-line-height:1.7;
-}
-
-/* Pricing */
-
-.pricing{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-}
-
-.plan{
-background:#161b22;
-padding:45px;
-border-radius:25px;
-text-align:center;
-transition:.4s;
-}
-
-.plan:hover{
-transform:translateY(-12px);
-}
-
-.plan h2{
-font-size:34px;
-color:#42d4ff;
-margin-bottom:15px;
-}
-
-.price{
-font-size:55px;
-margin-bottom:25px;
-}
-
-.plan ul{
-list-style:none;
-}
-
-.plan ul li{
-padding:12px;
-border-bottom:1px solid #2d333b;
-}
-
-/* Animation */
-
-@keyframes fade{
-
-from{
-opacity:0;
-transform:translateY(40px);
-}
-
-to{
-opacity:1;
-transform:translateY(0);
-}
-
-}
-
-@media(max-width:900px){
-
-.hero h1{
-font-size:55px;
-}
-
-.hero h2{
-font-size:24px;
-}
-
-nav{
-flex-direction:column;
-}
-
-nav ul{
-margin-top:20px;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-nav ul li{
-margin:10px;
-}
-
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
+
+
+<!-- Navigation -->
 
 <nav>
 
-<div class="logo">LOGO STUDIO</div>
+<div class="logo">
+CT LOGOS
+</div>
+
 
 <ul>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#portfolio">Portfolio</a></li>
-<li><a href="#pricing">Pricing</a></li>
-<li><a href="#contact">Contact</a></li>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="contact.html">Contact</a></li>
+
 </ul>
 
 </nav>
 
+
+
+<!-- Hero Section -->
+
+
 <header class="hero">
 
-<div>
 
-<h1>Creativity That Talks</h1>
+<div class="hero-content">
 
-<h2>Modern Logo & Brand Identity Design</h2>
+
+<h1>
+Creativity That Talks
+</h1>
+
+
+<h2>
+Professional Logo Design For Growing Brands
+</h2>
+
 
 <p>
 
-Helping businesses create memorable identities through
-professional logo design, branding and creative thinking.
-Simple. Bold. Timeless.
+CT Logos provides affordable logo design and branding services for small businesses, startups and creators looking for a professional logo designer.
 
 </p>
 
+
 <div class="buttons">
 
-<a href="#portfolio" class="btn">View Portfolio</a>
 
-<a href="#contact" class="btn2">Get Started</a>
+<a href="portfolio.html" class="btn">
+View Designs
+</a>
+
+
+<a href="contact.html" class="btn-outline">
+Start Your Logo
+</a>
+
 
 </div>
 
+
 </div>
+
 
 </header>
+
+
+
+
+
+<!-- About -->
+
+
+<section class="section">
+
+
+<h2 class="title">
+About CT Logos
+</h2>
+
+
+<div class="card">
+
+
+<p>
+
+CT Logos creates modern, clean and professional logo designs
+for small businesses, creators and new brands.
+
+Every design is created with creativity, purpose and your
+business goals in mind.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- Services Preview -->
+
+
+<section class="section">
+
+
+<h2 class="title">
+What I Create
+</h2>
+
+
+<div class="grid">
+
+
+
+<div class="card">
+
+<h3>
+Logo Design
+</h3>
+
+<p>
+Unique logos designed around your brand personality.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Brand Identity
+</h3>
+
+<p>
+Colours, fonts and branding ideas that keep your business consistent.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Social Media Design
+</h3>
+
+<p>
+Professional profile images and graphics for your pages.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- Pricing Preview -->
+
+
+<section class="section">
+
+
+<h2 class="title">
+Starting Prices
+</h2>
+
+
+
+<div class="grid">
+
+
+
+<div class="price-card">
+
+<h3>
+Starter Logo
+</h3>
+
+<h2>
+£25
+</h2>
+
+<p>
+Perfect for new businesses.
+</p>
+
+</div>
+
+
+
+<div class="price-card">
+
+<h3>
+Professional Logo
+</h3>
+
+<h2>
+£50
+</h2>
+
+<p>
+More concepts and revisions.
+</p>
+
+</div>
+
+
+
+<div class="price-card">
+
+<h3>
+Brand Builder
+</h3>
+
+<h2>
+£100
+</h2>
+
+<p>
+Logo + complete brand starter pack.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+<br>
+
+
+<a href="services.html" class="btn">
+View All Packages
+</a>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Why Choose Me -->
+
+
+<section class="section">
+
+
+<h2 class="title">
+Why Choose CT Logos?
+</h2>
+
+
+
+<div class="grid">
+
+
+
+<div class="card">
+
+<h3>
+Affordable
+</h3>
+
+<p>
+Designed for startups and small businesses.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Creative
+</h3>
+
+<p>
+Every design is created from scratch.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Personal Service
+</h3>
+
+<p>
+Direct communication throughout your project.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Contact -->
+
+
+<section class="contact-box">
+
+
+<h2>
+Ready To Build Your Brand?
+</h2>
+
+<a href="https://www.instagram.com/ct_logosofficial/">
+Instagram
+</a>
+
+<p>
+
+Email:
+<strong>
+CTLogos2026@outlook.com
+</strong>
+
+</p>
+
+
+
+<p>
+
+Phone:
+<strong>
+07908486055
+</strong>
+
+</p>
+
+
+
+<a href="contact.html" class="btn">
+Contact Me
+</a>
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+
+<p>
+© 2026 CT Logos | Creativity That Talks
+</p>
+
+
+</footer>
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
